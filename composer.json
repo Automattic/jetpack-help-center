@@ -5,12 +5,11 @@
 	"license": "GPL-2.0-or-later",
 	"require": {
 		"php": ">=7.2",
-		"automattic/jetpack-connection": "@dev",
-		"automattic/jetpack-status": "@dev"
+		"automattic/jetpack-connection": "^8.8.0-alpha",
+		"automattic/jetpack-status": "^6.1.9"
 	},
 	"require-dev": {
-		"automattic/phpunit-select-config": "@dev",
-		"automattic/jetpack-test-environment": "@dev",
+		"automattic/phpunit-select-config": "^1.0.9",
 		"brain/monkey": "^2.6.2",
 		"yoast/phpunit-polyfills": "^4.0.0"
 	},
@@ -30,15 +29,6 @@
 		],
 		"test-php-coverage": "php -dpcov.directory=. ./vendor/bin/phpunit-select-config phpunit.#.xml.dist --coverage-php \"$COVERAGE_DIR/php.cov\""
 	},
-	"repositories": [
-		{
-			"type": "path",
-			"url": "../../packages/*",
-			"options": {
-				"monorepo": true
-			}
-		}
-	],
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"extra": {
